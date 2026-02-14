@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop Shoes | STRIDE</title>
+  <meta name="description" content="Browse STRIDE shoe collections with filters by size, color, price, brand, and category." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar"><div class="container nav-wrap"><a class="logo" href="index.html">STRIDE</a><button class="menu-toggle">☰</button><nav class="main-nav"><a href="index.html">Home</a><a href="products.html">Shop</a><a href="cart.html">Cart <span id="cartCount">0</span></a><a href="contact.html">Contact</a></nav></div></header>
+  <main class="section">
+    <div class="container">
+      <h1>Shop All Shoes</h1>
+      <div class="filters">
+        <input id="searchInput" type="search" placeholder="Search by model or type" />
+        <select id="categoryFilter"><option value="">All Categories</option><option>Football</option><option>Running</option><option>Casual</option><option>Sneakers</option></select>
+        <select id="sizeFilter"><option value="">All Sizes</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option></select>
+        <select id="colorFilter"><option value="">All Colors</option><option>Black</option><option>White</option><option>Blue</option><option>Red</option></select>
+        <select id="priceFilter"><option value="">Any Price</option><option value="0-80">Under $80</option><option value="81-120">$81-$120</option><option value="121-999">$121+</option></select>
+        <select id="brandFilter"><option value="">All Brands</option><option>STRIDE</option><option>Velocity</option><option>Pace</option></select>
+      </div>
+      <div class="product-grid" id="shopGrid"></div>
+    </div>
+  </main>
+
+  <div class="modal" id="sizeGuideModal" aria-hidden="true">
+    <div class="modal-content">
+      <button class="close-modal" data-close="sizeGuideModal">×</button>
+      <h3>Size Guide</h3>
+      <p>US 7 = EU 40 · US 8 = EU 41 · US 9 = EU 42 · US 10 = EU 43 · US 11 = EU 44</p>
+    </div>
+  </div>
+
+  <button class="floating-guide" data-open="sizeGuideModal">Size Guide</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

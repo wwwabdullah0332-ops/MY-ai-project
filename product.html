@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Details | STRIDE</title>
+  <meta name="description" content="View detailed shoe information, gallery, and size selection at STRIDE." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar"><div class="container nav-wrap"><a class="logo" href="index.html">STRIDE</a><button class="menu-toggle">☰</button><nav class="main-nav"><a href="index.html">Home</a><a href="products.html">Shop</a><a href="cart.html">Cart <span id="cartCount">0</span></a><a href="contact.html">Contact</a></nav></div></header>
+  <main class="section">
+    <div class="container product-page">
+      <div>
+        <img id="mainProductImage" class="zoomable" src="https://images.unsplash.com/photo-1463100099107-aa0980c362e6?auto=format&fit=crop&w=900&q=80" alt="STRIDE product" />
+        <div class="thumbs">
+          <img src="https://images.unsplash.com/photo-1463100099107-aa0980c362e6?auto=format&fit=crop&w=300&q=80" alt="angle 1" />
+          <img src="https://images.unsplash.com/photo-1512374382149-233c42b6a83b?auto=format&fit=crop&w=300&q=80" alt="angle 2" />
+          <img src="https://images.unsplash.com/photo-1543508282-6319a3e2621f?auto=format&fit=crop&w=300&q=80" alt="angle 3" />
+        </div>
+      </div>
+      <article>
+        <h1>STRIDE AeroRun X1</h1>
+        <p class="price">$119</p>
+        <p>Engineered for speed and all-day comfort, the AeroRun X1 combines breathable mesh, responsive cushioning, and anti-slip grip technology.</p>
+        <label for="sizeSelect">Select Size</label>
+        <select id="sizeSelect"><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option></select>
+        <div class="cta-row"><button class="btn btn-primary" id="addProductBtn">Add to Cart</button><button class="btn btn-outline" data-open="sizeGuideModal">Size Guide</button></div>
+      </article>
+    </div>
+  </main>
+
+  <div class="modal" id="sizeGuideModal" aria-hidden="true"><div class="modal-content"><button class="close-modal" data-close="sizeGuideModal">×</button><h3>Size Guide</h3><p>Use your running shoe size for best fit. If between sizes, go one size up.</p></div></div>
+  <script src="script.js"></script>
+</body>
+</html>
